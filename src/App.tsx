@@ -147,8 +147,7 @@ export default function App() {
   ];
 
   const tabs: Array<{ key: TabKey; label: string; icon: React.ReactNode }> = [
-    { key: 'home', label: '홈', icon: <Home size={19}/> }, { key: 'unit', label: '단가', icon: <Database size={19}/> },
-    { key: 'area', label: '면적', icon: <Building2 size={19}/> }, { key: 'pf', label: 'PF', icon: <WalletCards size={19}/> },
+    { key: 'home', label: '홈', icon: <Home size={19}/> },
     { key: 'result', label: '결과', icon: <Calculator size={19}/> }
   ];
 
