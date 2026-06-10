@@ -70,7 +70,10 @@ function diffPercent(current: number, base: number): string {
 }
 
 function Field({ label, value, onChange, comma = false, suffix = '' }: { label: string; value: string; onChange: (v: string) => void; comma?: boolean; suffix?: string }) {
-  return <label className="field"><span>{label}</span><div className="fieldBox"><input value={comma ? fmt(value) : value} onChange={(e) => onChange(comma ? raw(e.target.value) : e.target.value)} inputMode="decimal" />{suffix && <em>{suffix}</em>}</div></label>;
+  return <label className="field"><span>{label}</span><div className="fieldBox"><input value={comma ? fmt(value) : value} onChange={(e) => onChange(comma ? raw(e.target.value) : e.target.value)} type="text"
+          inputMode="numeric"
+          pattern="[0-9,]*"
+          enterKeyHint="done" />{suffix && <em>{suffix}</em>}</div></label>;
 }
 
 function ResultLine({ label, value }: { label: string; value: string }) {
