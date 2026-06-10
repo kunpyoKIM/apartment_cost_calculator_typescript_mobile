@@ -1,1 +1,1 @@
-# apartment_cost_calculator_typescript_mobile
+# apartment_cost_calculator_mobile
